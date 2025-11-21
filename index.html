@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Wisata Tuban</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="front">
+  <div class="ui-layer">
+    <div class="logo" href="#" aria-label="Logo Wisata Tuban">
+    </div>
+  </div>
+
+  <!-- SIDEBAR FILTER -->
+<aside id="filter-sidebar" class="filter-sidebar" aria-hidden="false">
+  <div class="filter-header">
+    <h3>Jenis Wisata</h3>
+    <button id="filter-close">&times;</button>
+  </div>
+
+  <div class="filter-body">
+
+    <div class="filter-item">
+      <span>Kota</span>
+      <div class="actions">
+        <button class="show-btn" data-type="kota">Show</button>
+        <button class="hide-btn" data-type="kota">Hide</button>
+      </div>
+    </div>
+
+    <div class="filter-item">
+      <span>Alam</span>
+      <div class="actions">
+        <button class="show-btn" data-type="alam">Show</button>
+        <button class="hide-btn" data-type="alam">Hide</button>
+      </div>
+    </div>
+
+    <div class="filter-item">
+      <span>Pantai</span>
+      <div class="actions">
+        <button class="show-btn" data-type="pantai">Show</button>
+        <button class="hide-btn" data-type="pantai">Hide</button>
+      </div>
+    </div>
+
+    <div class="filter-item">
+      <span>Goa</span>
+      <div class="actions">
+        <button class="show-btn" data-type="goa">Show</button>
+        <button class="hide-btn" data-type="goa">Hide</button>
+      </div>
+    </div>
+
+    <div class="filter-item about-box">
+  <span>About</span>
+  <div class="actions">
+    <button id="about-btn">Open</button>
+  </div>
+</div>
+
+
+  </div>
+</aside>
+
+<button id="filter-toggle" class="filter-toggle">☰ Jenis Wisata</button>
+
+  <!-- VIEWPORT WRAPPER -->
+  <div id="wrapper" class="dragscroll" tabindex="0" aria-label="Peta wrapper">
+
+    <div id="map" class="content" role="application" aria-label="Peta Pacitan">
+      <div class="view-content">
+
+        <div class="pin goa-pin"
+             style="left: 2215px; top: 900px;"
+             data-id="goa-akbar"
+             data-title="Goa Akbar"
+             data-info="Goa Akbar adalah destinasi wisata terkenal di Tuban. Ada stalaktit, stalagmit, dan kolam alami."
+             data-location="Kec. Semanding, Tuban"
+             data-type="Wisata Goa"
+             data-img="img/goa-akbar.jpg">
+          <img src="img/pin.png" class="pin-icon" alt="pin">
+          <div class="pin-title">Goa Akbar</div>
+        </div>
+
+        <!-- Pantai -->
+<div class="pin pantai-pin"
+     style="left: 2460px; top: 880px;"
+     data-id="pantai-kelapa"
+     data-title="Pantai Kelapa"
+     data-info="Pantai Kelapa adalah destinasi wisata populer di Tuban yang terkenal dengan deretan pohon kelapa di sepanjang pesisirnya. Pantai ini menawarkan suasana sejuk, fasilitas lengkap seperti ATV, berkuda, flying fox, kolam renang, hingga area camping yang luas. Pengunjung dapat menikmati panorama matahari terbenam, bermain air, atau bersantai di bawah pepohonan rindang."
+     data-location="Palang, Tuban"
+     data-type="Wisata Pantai"
+     data-img="/img/pantaikelapa.jpg">
+  <img src="img/pin.png" class="pin-icon" alt="pin">
+  <div class="pin-title">Pantai Kelapa</div>
+</div>
+
+<div class="pin pantai-pin"
+     style="left: 1260px; top: 485px;"
+     data-id="pantai-sowan"
+     data-title="Pantai Sowan"
+     data-info="Pantai Sowan adalah destinasi wisata di Tuban yang unik karena perpaduan pantai berpasir putih dengan area hutan rindang dari Perum Perhutani. Keistimewaannya terletak pada suasana sejuk dan nyaman dari pepohonan seperti akasia dan mahoni, serta pemandangan alam yang masih asri. Pengunjung dapat menikmati berbagai aktivitas, mulai dari bermain air hingga menikmati kuliner lokal."
+     data-location="Bancar, Tuban"
+     data-type="Wisata Pantai"
+     data-img="img/pantaisowan.jpg">
+  <img src="img/pin.png" class="pin-icon" alt="pin">
+  <div class="pin-title">Pantai Sowan</div>
+</div>
+
+<!-- Alam -->
+<div class="pin alam-pin"
+     style="left: 1387px; top: 1100px;"
+     data-id="air-terjun-nglirip"
+     data-title="Air Terjun Nglirip"
+     data-info="Air Terjun Nglirip adalah destinasi wisata alam di Tuban, Jawa Timur, yang terkenal dengan airnya yang jernih dan sejuk di antara pepohonan rindang. Air terjun ini memiliki ketinggian sekitar 30 meter dan dikelilingi tebing hijau. Keunikan lainnya termasuk warna airnya yang hijau toska saat kemarau, mitos tentang legenda Putri Nglirip yang tragis, serta situs ziarah religi di makam Syech Abdul Jabbar di atas air terjun."
+     data-location="Singgahan, Tuban"
+     data-type="alam"
+     data-img="/img/air-terjun-nglirip.jpg">
+  <img src="img/pin.png" class="pin-icon" alt="pin">
+  <div class="pin-title">Air Terjun Nglirip</div>
+</div>
+
+<!-- Kota -->
+<div class="pin kota-pin"
+     style="left: 2300px; top: 885px;"
+     data-id="kota-tuban"
+     data-title="Kota Tuban"
+     data-info="Tuban adalah sebuah kabupaten di Jawa Timur yang terletak di pesisir utara Jawa, dikenal dengan julukan &quot;Bumi Wali&quot; karena perannya dalam penyebaran Islam oleh para Wali Songo. Kota ini memiliki sejarah panjang sebagai pelabuhan penting pada masa Kerajaan Majapahit dan menjadi persimpangan antara Jawa Timur dan Jawa Tengah. Selain nilai sejarah dan budaya, Tuban juga terkenal dengan keindahan alamnya seperti pantai dan gua, serta menjadi produsen hasil bumi seperti padi dan turunan siwalan seperti legen dan tuak"
+     data-location="Tuban"
+     data-type="Kota"
+     data-img="../img/alunaluntuban.jpg">
+  <img src="img/pin.png" class="pin-icon" alt="pin">
+  <div class="pin-title">Kota Tuban</div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP -->
+  <div id="monumen" class="modal" role="dialog" aria-hidden="true">
+    <div class="window">
+      <button class="close-button" data-close>&times;</button>
+      <h1>Monumen Jendral Sudirman</h1>
+      <p>Ini pop-up contoh.</p>
+    </div>
+  </div>
+
+  <!-- ===== Place Card (Sidebar) ===== -->
+  <aside id="place-card" class="place-card" aria-hidden="true">
+    <button id="card-close" class="card-close" aria-label="Tutup">&times;</button>
+    <div class="card-content">
+      <h2 id="card-title">Judul Tempat</h2>
+      <div id="card-images" class="card-images" aria-live="polite">
+       
+      </div>
+      <p id="card-desc">Deskripsi lengkap akan muncul di sini.</p>
+      <div class="card-meta">
+        <span id="card-location">Lokasi: -</span>
+        <span id="card-type">Tipe: -</span>
+      </div>
+    </div>
+  </aside>
+  <div id="card-overlay" class="card-overlay" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- ABOUT CARD -->
+<div id="about-card" class="about-card" aria-hidden="true">
+  <button id="about-close" class="card-close">&times;</button>
+  <div class="about-content">
+    <h2>About Website</h2>
+    <p>
+      Website Wisata Tuban ini dibuat untuk menampilkan informasi wisata 
+      seperti pantai, alam, goa, dan destinasi kota secara interaktif melalui peta digital.
+    </p>
+    <p>
+      Dibuat sebagai project pembelajaran dan eksplorasi UI/UX berbasis peta.
+    </p>
+  </div>
+</div>
+
+<div id="about-overlay" class="card-overlay" aria-hidden="true"></div>
+
+
+  <script src="js/script.js" defer></script>
+  <script src="js/card.js" defer></script>
+  <script src="js/filter.js" defer></script>
+  <script src="js/dragscroll.js" defer></script>
+
+</body>
+</html>
