@@ -58,6 +58,8 @@ html,body{
     border-radius: 4px;
     margin-bottom: 4px;
     white-space: nowrap;
+    z-index: 200000 !important;
+    position: absolute;
 }
 
 .pin-icon {
@@ -156,17 +158,6 @@ html,body{
  transform: translate(-50%,-100%);
 }
 
-/* POPUP HOVER */
-.pop{
-  position:absolute;
-  display:none;
-  width:150px;
-  text-align:center;
-  color:#fff
-}
-.area:hover.pop{display:block}
-
-/* MODAL */
 .modal{
   position:fixed;
   inset:0;
@@ -449,7 +440,7 @@ html,body{
 
   .filter-sidebar {
     width: 100%;
-    height: 60%;
+    height: 70%;
     right: 0;                 
     bottom: -100%;          
     top: auto;               
